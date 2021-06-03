@@ -5,3 +5,11 @@
 /.vs
 /obj
 /bin
+/ShoeLovers.DB/bin/Debug
+/ShoeLovers.DB/obj/Debug
+/ShoeLovers.Repo/bin/Debug/netcoreapp3.1
+/ShoeLovers.Repo/obj
+/ShoeLovers.DB/ShoeLovers.DB.jfm
+/ShoeLovers.DB/ShoeLovers.DB.refactorlog
+/ShoeLovers.DB/ShoeLovers.DB.sqlproj.user
+/ShoeLovers.DB/ShoeLovers.DB.dbmdl

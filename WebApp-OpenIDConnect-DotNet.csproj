@@ -7,14 +7,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ShoeLovers.DB\**" />
+    <Compile Remove="ShoeLovers.Repo\**" />
+    <Compile Remove="ShoeLovers.Tests\**" />
+    <Content Remove="ShoeLovers.DB\**" />
+    <Content Remove="ShoeLovers.Repo\**" />
+    <Content Remove="ShoeLovers.Tests\**" />
+    <EmbeddedResource Remove="ShoeLovers.DB\**" />
+    <EmbeddedResource Remove="ShoeLovers.Repo\**" />
+    <EmbeddedResource Remove="ShoeLovers.Tests\**" />
+    <None Remove="ShoeLovers.DB\**" />
+    <None Remove="ShoeLovers.Repo\**" />
+    <None Remove="ShoeLovers.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="IdentityModel" Version="5.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
     <PackageReference Include="Microsoft.Identity.Web" Version="1.4.0" />
     <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.1" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShoeLovers.Repo\ShoeLovers.Repo.csproj" />
+    <ProjectReference Include="ShoeLovers.Repo\ShoeLovers.Repo.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,11 +5,16 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp-OpenIDConnect-DotNet", "WebApp-OpenIDConnect-DotNet.csproj", "{8DCFEEC2-0A85-4C7E-B96A-21C9184470B1}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ShoeLovers.DB", "..\ShoeLovers.DB\ShoeLovers.DB.sqlproj", "{AA4F99D1-5471-464D-8FA4-D4FEBA58BB89}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ShoeLovers.DB", "ShoeLovers.DB\ShoeLovers.DB.sqlproj", "{AA4F99D1-5471-464D-8FA4-D4FEBA58BB89}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoeLovers.Repo", "..\ShoeLovers.Repo\ShoeLovers.Repo.csproj", "{31C6D623-FDA2-467B-B1C5-3A4AF39C3B1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoeLovers.Repo", "ShoeLovers.Repo\ShoeLovers.Repo.csproj", "{58D5227F-FF0F-41A2-988E-B0290E1BF62D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeLovers.Tests", "..\ShoeLovers.Tests\ShoeLovers.Tests.csproj", "{37C1EA2B-936C-43E1-864C-FD8492F1DC03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoeLovers.Tests", "ShoeLovers.Tests\ShoeLovers.Tests.csproj", "{5FB496C7-DAF6-438E-B63A-C8B3049E5BF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{2841B5AB-ABF3-4CF3-9034-258C547EEC0E}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Interview Scenario 1.docx = Documentation\Interview Scenario 1.docx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,14 +32,14 @@ Global
 		{AA4F99D1-5471-464D-8FA4-D4FEBA58BB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA4F99D1-5471-464D-8FA4-D4FEBA58BB89}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA4F99D1-5471-464D-8FA4-D4FEBA58BB89}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{31C6D623-FDA2-467B-B1C5-3A4AF39C3B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31C6D623-FDA2-467B-B1C5-3A4AF39C3B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31C6D623-FDA2-467B-B1C5-3A4AF39C3B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31C6D623-FDA2-467B-B1C5-3A4AF39C3B1E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37C1EA2B-936C-43E1-864C-FD8492F1DC03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37C1EA2B-936C-43E1-864C-FD8492F1DC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37C1EA2B-936C-43E1-864C-FD8492F1DC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37C1EA2B-936C-43E1-864C-FD8492F1DC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D5227F-FF0F-41A2-988E-B0290E1BF62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D5227F-FF0F-41A2-988E-B0290E1BF62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D5227F-FF0F-41A2-988E-B0290E1BF62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D5227F-FF0F-41A2-988E-B0290E1BF62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB496C7-DAF6-438E-B63A-C8B3049E5BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB496C7-DAF6-438E-B63A-C8B3049E5BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB496C7-DAF6-438E-B63A-C8B3049E5BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB496C7-DAF6-438E-B63A-C8B3049E5BF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
