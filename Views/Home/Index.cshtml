@@ -1,0 +1,31 @@
+﻿@model HomeView
+
+@{ ViewData["Title"] = "Home Page"; }
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Shoe Lovers Club</h1>
+</div>
+
+@using (Html.BeginForm("Update", "Home", FormMethod.Post))
+{
+    {
+        for (var index = 0; index < Model.AvailableShoeSizes.Count(); index++)
+        {
+
+            @*<div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="@item.Id" @if (item.IsSelected) { <text> checked </text> } /> @item.Size
+                    </label>
+                </div>*@
+            <div>
+                @Html.CheckBoxFor(m => Model.AvailableShoeSizes[index].IsSelected) @*, Model.AvailableShoeSizes[index].IsSelected)*@
+                @Html.LabelFor(m => m.AvailableShoeSizes[index].Size, Model.AvailableShoeSizes[index].Size)
+                @Html.HiddenFor(m => Model.AvailableShoeSizes[index].Id)@*, Model.AvailableShoeSizes[index].Id)*@
+            </div>
+        }
+
+        <hr />
+        <button type="submit" id="Save">Save Selection</button>
+
+    }
+}
