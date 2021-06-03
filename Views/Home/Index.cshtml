@@ -1,4 +1,4 @@
-﻿@model HomeView
+﻿@model IList<ShoeSizeView>
 
 @{ ViewData["Title"] = "Home Page"; }
 
@@ -9,23 +9,17 @@
 @using (Html.BeginForm("Update", "Home", FormMethod.Post))
 {
     {
-        for (var index = 0; index < Model.AvailableShoeSizes.Count(); index++)
+        for (var index = 0; index < Model.Count(); index++)
         {
-
-            @*<div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="@item.Id" @if (item.IsSelected) { <text> checked </text> } /> @item.Size
-                    </label>
-                </div>*@
             <div>
-                @Html.CheckBoxFor(m => Model.AvailableShoeSizes[index].IsSelected) @*, Model.AvailableShoeSizes[index].IsSelected)*@
-                @Html.LabelFor(m => m.AvailableShoeSizes[index].Size, Model.AvailableShoeSizes[index].Size)
-                @Html.HiddenFor(m => Model.AvailableShoeSizes[index].Id)@*, Model.AvailableShoeSizes[index].Id)*@
+                @Html.CheckBoxFor(m => m[index].IsSelected, Model[index].IsSelected)
+                @Html.LabelFor(m => m[index].Size, Model[index].Size)
+                @Html.HiddenFor(m => m[index].Size, Model[index].Size)
+                @Html.HiddenFor(m => m[index].Id, Model[index].Id)
             </div>
         }
 
         <hr />
         <button type="submit" id="Save">Save Selection</button>
-
     }
 }

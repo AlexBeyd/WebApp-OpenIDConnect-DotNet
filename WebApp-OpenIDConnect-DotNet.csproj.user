@@ -6,5 +6,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>webApp</ActiveDebugProfile>
     <ShowAllFiles>false</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>C:\Users\beyde\source\repos\ShoeLoversProj\Properties\PublishProfiles\shoelovers-web - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

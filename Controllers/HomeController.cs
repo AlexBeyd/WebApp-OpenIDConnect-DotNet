@@ -50,17 +50,17 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
                 updatedForView.Add(item);
             }
 
-            return View(new HomeView { AvailableShoeSizes = updatedForView });
+            return View(updatedForView);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update([FromBody] HomeView postedData)
+        public async Task<IActionResult> Update([FromBody] IEnumerable<ShoeSizeView> postedData)
         {
             var userId = GetLoggedUserId();
 
             //only user selected are sent to database
             await _userMgr.PersistRangeExactAsync(
-                postedData.AvailableShoeSizes.Where(v => v.IsSelected).Select(v => new UserSelectionEntity {
+                postedData.Where(v => v.IsSelected).Select(v => new UserSelectionEntity {
                     ShoeSizeId = v.Id,
                     UserId = userId
                    }
