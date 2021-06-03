@@ -54,7 +54,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update([FromBody] IEnumerable<ShoeSizeView> postedData)
+        public async Task<IActionResult> Update(IEnumerable<ShoeSizeView> postedData)
         {
             var userId = GetLoggedUserId();
 
@@ -66,7 +66,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
                    }
                 )).ConfigureAwait(false);
             
-            return View(postedData);
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

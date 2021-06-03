@@ -12,7 +12,7 @@
         for (var index = 0; index < Model.Count(); index++)
         {
             <div>
-                @Html.CheckBoxFor(m => m[index].IsSelected, Model[index].IsSelected)
+                @Html.CheckBoxFor(m => m[index].IsSelected, "true")
                 @Html.LabelFor(m => m[index].Size, Model[index].Size)
                 @Html.HiddenFor(m => m[index].Size, Model[index].Size)
                 @Html.HiddenFor(m => m[index].Id, Model[index].Id)
